@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jagwax Friends</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images-1.jpg">
+</head>
+<body>
+  <header>
+    <img src="images-1.jpg" class="logo" alt="Jagwax Logo">
+    <h1>Jagwax World</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="friends.html">Friends</a>
+      <a href="promotion.html">Promotion</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="index.html" class="logout-btn">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <h2>My Friends & Classmates</h2>
+    <div class="friends-cards">
+      <!-- Eunice -->
+      <div class="friend-card">
+        <img src="IMG-20250724-WA0160.jpg" class="friend-img" alt="Eunice">
+        <div class="friend-info">
+          <h3>Umeakuta Eunice Uchechi</h3>
+          <p>Age: 16</p>
+          <p>Birthday: 18 June</p>
+          <div id="countdown-eunice" class="countdown"></div>
+          <div class="friend-links">
+            <a href="https://www.facebook.com/profile.php?id=61575350217875" target="_blank">Facebook</a>
+            <a href="mailto:uchechiumeakuta02@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+      <!-- Ayeni -->
+      <div class="friend-card">
+        <img src="1756639660549.jpg" class="friend-img" alt="Ayeni">
+        <div class="friend-info">
+          <h3>Ayeni Faidat Ayomide</h3>
+          <p>Age: 16</p>
+          <p>Birthday: 21 March</p>
+          <div id="countdown-ayeni" class="countdown"></div>
+          <div class="friend-links">
+            <a href="https://www.facebook.com/profile.php?id=61579042764598" target="_blank">Facebook</a>
+            <a href="https://wa.me/2349043844905" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> Jagwax World. All rights reserved.<br>
+    <a href="mailto:gbadamositajudeenwan@gmail.com">Email</a> | 
+    <a href="https://wa.me/2347050512232" target="_blank">WhatsApp</a> | 
+    <a href="https://www.facebook.com/share/1BF5ZYXKrH/" target="_blank">Facebook</a>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    countdown('countdown-eunice', 6, 18);
+    countdown('countdown-ayeni', 3, 21);
+  </script>
+</body>
+</html>

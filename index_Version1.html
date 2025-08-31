@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jagwax World</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images-1.jpg">
+</head>
+<body>
+  <header>
+    <img src="images-1.jpg" class="logo" alt="Jagwax Logo">
+    <h1>Jagwax World</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="friends.html">Friends</a>
+      <a href="promotion.html">Promotion</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="index.html" class="logout-btn">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <section class="about">
+      <img src="images-1.jpg" class="about-img" alt="Jagwax">
+      <div>
+        <h2>Hello! I'm Jagwax (Tajudeen Gbadamosi)</h2>
+        <p>
+          Welcome to my world! Here you'll meet me and my amazing friends. We celebrate, connect, and showcase the best of ourselves to the world.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:gbadamositajudeenwan@gmail.com">Email</a>
+          <a href="https://wa.me/2347050512232" target="_blank">WhatsApp</a>
+          <a href="https://www.facebook.com/share/1BF5ZYXKrH/" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </section>
+    <section class="friends-preview">
+      <h2>Meet My Friends</h2>
+      <div class="friends-list">
+        <a href="friends.html" class="friend-card-link">
+          <img src="IMG-20250724-WA0160.jpg" alt="Eunice" class="friend-thumb">
+          <span>Umeakuta Eunice Uchechi</span>
+        </a>
+        <a href="friends.html" class="friend-card-link">
+          <img src="1756639660549.jpg" alt="Ayeni" class="friend-thumb">
+          <span>Ayeni Faidat Ayomide</span>
+        </a>
+      </div>
+      <a href="promotion.html" class="promo-btn">See Promotion Page</a>
+    </section>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> Jagwax World. All rights reserved.<br>
+    <a href="mailto:gbadamositajudeenwan@gmail.com">Email</a> | 
+    <a href="https://wa.me/2347050512232" target="_blank">WhatsApp</a> | 
+    <a href="https://www.facebook.com/share/1BF5ZYXKrH/" target="_blank">Facebook</a>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

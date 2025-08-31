@@ -1,0 +1,255 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f7f8fa;
+  color: #222;
+}
+header {
+  background: #1a2233;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 2em;
+}
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  margin-right: 0.8em;
+}
+header h1 {
+  font-size: 1.6em;
+  margin: 0 1.2em 0 0;
+}
+nav {
+  display: flex;
+  gap: 1em;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+nav a:hover, nav a.active {
+  background: #3552a2;
+}
+.logout-btn {
+  background: #f44336;
+  color: #fff !important;
+  border-radius: 5px;
+  padding: 6px 20px;
+  font-weight: bold;
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+footer {
+  background: #1a2233;
+  color: #e2e7ee;
+  text-align: center;
+  padding: 1.2em 0 0.7em 0;
+}
+footer a {
+  color: #7bdff2;
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+  background: #fff;
+  box-shadow: 0 2px 10px #e3e7ed;
+  border-radius: 15px;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+.about-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #3552a2;
+  box-shadow: 0 0 24px #a1bbf8;
+}
+.contact-links {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+}
+.contact-links a {
+  color: #3552a2;
+  border: 1px solid #3552a2;
+  border-radius: 6px;
+  padding: 5px 14px;
+  transition: background 0.2s, color 0.2s;
+}
+.contact-links a:hover {
+  background: #3552a2;
+  color: #fff;
+}
+.friends-preview {
+  margin: 2em 0 1em 0;
+  text-align: center;
+}
+.friends-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 1em 0 2em 0;
+}
+.friend-card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #e3e7ed;
+  padding: 1em;
+  width: 150px;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.friend-card-link:hover {
+  box-shadow: 0 4px 25px #c3d2f9;
+  background: #f2f7ff;
+}
+.friend-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+  object-fit: cover;
+  border: 2px solid #3552a2;
+}
+.promo-btn {
+  background: #0fd850;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 10px #e3eaf6;
+  transition: background 0.2s;
+}
+.promo-btn:hover {
+  background: #3552a2;
+}
+.friends-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+.friend-card {
+  background: #fff;
+  box-shadow: 0 2px 15px #e3e7ed;
+  border-radius: 15px;
+  padding: 1.5em;
+  width: 340px;
+  display: flex;
+  gap: 1.3em;
+  align-items: center;
+}
+.friend-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #0fd850;
+  object-fit: cover;
+}
+.friend-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+.friend-links {
+  margin-top: 0.6em;
+  display: flex;
+  gap: 0.7em;
+}
+.friend-links a {
+  color: #fff;
+  background: #3552a2;
+  border-radius: 5px;
+  padding: 4px 14px;
+  text-decoration: none;
+  font-size: 0.97em;
+  transition: background 0.2s;
+}
+.friend-links a:hover {
+  background: #0fd850;
+}
+.countdown {
+  margin-top: 0.3em;
+  font-size: 1em;
+  color: #3552a2;
+  font-weight: 500;
+}
+.promo-gallery {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2em 0;
+}
+.promo-media {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #e3e7ed;
+  padding: 1em;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo-media img,
+.promo-media video {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8em;
+  border: 2px solid #3552a2;
+}
+.upload-hint {
+  margin-top: 2em;
+  font-size: 1.02em;
+  color: #444;
+}
+.privacy-section {
+  background: #fff;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2em 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px #e3e7ed;
+}
+@media (max-width: 750px) {
+  .about, .friends-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-img {
+    margin-bottom: 1em;
+  }
+  header {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+  }
+}
